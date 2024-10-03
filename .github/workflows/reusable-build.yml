@@ -336,7 +336,7 @@ jobs:
     name: ucore
     runs-on: ubuntu-24.04
     if: always() && !cancelled()
-    needs: [workflow_info, stream_info]
+    needs: [workflow_info, stream_info, build_fcos]
     permissions:
       contents: read
       packages: write
